@@ -35,6 +35,7 @@ addEventListener('DOMContentLoaded', function () {
    }
    sendForm('./server.php');
 
+
    new Glide('.main-slider', {
       type: 'carousel',
       autoplay: 7000,

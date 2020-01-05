@@ -21,8 +21,9 @@ var popupShow = function () {
    var popupBtn = document.querySelectorAll('[data-popup]');
    for (var i = 0; i < popupBtn.length; i++) {
       popupBtn[i].addEventListener('click', function () {
-         var popup = document.querySelector(this.getAttribute('data-popup'));
-         this.style.display = 'none';
+         var dataPopup = this.getAttribute('data-popup');
+         var popup = document.querySelector(dataPopup);
+         if (dataPopup === '#gift') this.style.display = 'none';
          fadingIn(popup);
          popupСlose(popup);
       });
