@@ -1,4 +1,6 @@
 'use strict';
+import elementClosest from 'element-closest';
+elementClosest(window);
 
 import scroll from './modules/scroll';
 import {slidingDown, slidingUp, slidingToggle} from './modules/sliding';

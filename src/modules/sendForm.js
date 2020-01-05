@@ -34,7 +34,7 @@ var sendForm = function (url) {
                messageStatus.innerText = 'Упс, что-то пошло не так...';
                messageStatus.className = 'messageError';
                setTimeout(function () {
-                  messageStatus.style.display = 'none'
+                  messageStatus.style.display = 'none';
                }, 10000);
             }
 
@@ -42,7 +42,7 @@ var sendForm = function (url) {
                messageStatus.innerText = 'Форма успешно отправлена!';
                messageStatus.className = 'messageSuccess';
                setTimeout(function () {
-                  messageStatus.style.display = 'none'
+                  messageStatus.style.display = 'none';
                }, 10000);
             }
          };
